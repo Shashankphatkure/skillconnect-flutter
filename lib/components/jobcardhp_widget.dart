@@ -86,9 +86,14 @@ class _JobcardhpWidgetState extends State<JobcardhpWidget>
                       child: Container(
                         width: 90.0,
                         height: 90.0,
-                        decoration: BoxDecoration(
+                        decoration: const BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(12.0),
+                          borderRadius: BorderRadius.only(
+                            bottomLeft: Radius.circular(14.0),
+                            bottomRight: Radius.circular(14.0),
+                            topLeft: Radius.circular(14.0),
+                            topRight: Radius.circular(14.0),
+                          ),
                         ),
                         child: Visibility(
                           visible: responsiveVisibility(

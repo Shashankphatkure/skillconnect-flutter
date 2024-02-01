@@ -73,7 +73,7 @@ class _HomePageWidgetState extends State<HomePageWidget> {
             },
           ),
           title: Text(
-            'Page Title',
+            'Courses',
             style: FlutterFlowTheme.of(context).headlineMedium.override(
                   fontFamily: 'Outfit',
                   color: FlutterFlowTheme.of(context).primaryText,

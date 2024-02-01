@@ -121,6 +121,7 @@ class _NavBarPageState extends State<NavBarPage> {
     final tabs = {
       'HomePage': const HomePageWidget(),
       'profileaccount': const ProfileaccountWidget(),
+      'searchpage': const SearchpageWidget(),
       'blogspage': const BlogspageWidget(),
     };
     final currentIndex = tabs.keys.toList().indexOf(_currentPageName);
@@ -146,7 +147,7 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 24.0,
             ),
             activeIcon: Icon(
-              Icons.home,
+              Icons.video_collection,
               size: 24.0,
             ),
             label: 'Courses',
@@ -158,6 +159,14 @@ class _NavBarPageState extends State<NavBarPage> {
               size: 24.0,
             ),
             label: 'Profile',
+            tooltip: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.manage_search,
+              size: 24.0,
+            ),
+            label: 'Home',
             tooltip: '',
           ),
           BottomNavigationBarItem(

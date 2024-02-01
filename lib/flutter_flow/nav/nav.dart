@@ -125,7 +125,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: 'searchpage',
           path: '/searchpage',
-          builder: (context, params) => const SearchpageWidget(),
+          builder: (context, params) => params.isEmpty
+              ? const NavBarPage(initialPage: 'searchpage')
+              : const SearchpageWidget(),
         ),
         FFRoute(
           name: 'blogspage',
